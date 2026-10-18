@@ -1,0 +1,44 @@
+{
+  "name": "sharelocal",
+  "version": "1.0.0",
+  "description": "⚡ Instantly share localhost with a mobile-friendly terminal QR code and zero-config public tunnels.",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "sharelocal": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "localhost",
+    "tunnel",
+    "qr-code",
+    "mobile-testing",
+    "developer-tools",
+    "cli",
+    "ngrok-alternative",
+    "wifi-share"
+  ],
+  "author": "Pulkit Bisht",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^9.0.0",
+    "commander": "^15.0.0",
+    "ora": "^9.4.1",
+    "picocolors": "^1.1.1",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
